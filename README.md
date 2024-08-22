@@ -1,17 +1,27 @@
-Build project
+Build project:
+
+```
 npm run build
 npm run start
+```
 
-Kiểm tra ESLint/Prettier error
+Kiểm tra ESLint/Prettier error:
+
+```
 npm run lint
 npm run prettier
+```
 
-Tự động fix eslint/prettier
+Tự động fix eslint/prettier:
+
+```
 npm run lint:fix
 npm run prettier:fix
+```
 
 Giải thích các thư mục:
 
+```
 dist: Thư mục chứa các file build
 src: Thư mục chứa mã nguồn
 src/constants: Chứa các file chứa các hằng số
@@ -22,3 +32,4 @@ src/models: Chứa các file chứa các model
 src/routes: Chứa các file chứa các route
 src/utils: Chứa các file chứa các hàm tiện ích, như mã hóa, gửi email, ...
 Còn lại là những file config cho project như .eslintrc, .prettierrc, ...
+```
