@@ -11,13 +11,13 @@
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
-    "db:seed": "tsx ./src/db/seed.ts",
-    "db:generate": "drizzle-kit generate --config=./src/db/drizzle.config.ts",
-    "db:migrate": "drizzle-kit migrate --config=./src/db/drizzle.config.ts",
+    "db:seed": "tsx ./src/models/seed.ts",
+    "db:generate": "drizzle-kit generate --config=./src/models/drizzle.config.ts",
+    "db:migrate": "drizzle-kit migrate --config=./src/models/drizzle.config.ts",
     "db:migration": "npm run db:generate && npm run db:migrate",
-    "db:drop-migrations": "drizzle-kit drop --config=./src/db/drizzle.config.ts",
-    "db:up-migration": "drizzle-kit up:mysql --out=./src/db/drizzle",
-    "db:studio": "drizzle-kit studio --config=./src/db/drizzle.config.ts"
+    "db:drop-migrations": "drizzle-kit drop --config=./src/models/drizzle.config.ts",
+    "db:up-migration": "drizzle-kit up:mysql --out=./src/models/drizzle",
+    "db:studio": "drizzle-kit studio --config=./src/models/drizzle.config.ts"
   },
   "keywords": [],
   "author": "",
@@ -53,6 +53,7 @@
     "jsonwebtoken": "^9.0.2",
     "morgan": "^1.10.0",
     "mysql2": "^3.11.0",
+    "socket.io": "^4.7.5",
     "zod": "^3.23.8"
   }
 }
