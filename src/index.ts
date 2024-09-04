@@ -32,7 +32,7 @@ app.use(function (err: Error, req: Request, res: Response, next: NextFunction) {
   res.locals.error = req.app.get('env') === 'development' ? err : {}
 
   res.status(500)
-  res.render('error')
+  res.json({ error: err })
 })
 
 const server = http.createServer(app)
