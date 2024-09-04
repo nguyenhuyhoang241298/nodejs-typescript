@@ -1,6 +1,6 @@
 import { eq } from 'drizzle-orm'
-import db from '~/db'
-import { NewUser, User, users } from '~/db/schemas/user'
+import db from '~/models'
+import { NewUser, User, users } from '~/models/schemas/user'
 
 export const getManyUsers = async () => {
   return await db.select().from(users)
